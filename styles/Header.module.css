@@ -13,15 +13,20 @@
     margin: 0% 5%;
     width: 100%;
 }
+.logo{
+    min-height: 80px;
+}
 .list{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     list-style: none;
-    
+    width: 50%;
+    padding: 0;
+
 }
 .item{
     display: flex;
     justify-content: flex-end;
-    width: 70px;
+    width: 60px;
 }
