@@ -1,0 +1,147 @@
+
+
+.container{
+    background-color:  white;
+    width: 100vw;
+    height: 80px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0% 5%;
+        width: 100%;
+        nav {
+            margin-left: auto;
+        }
+        li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        li:hover{
+            font-weight: bold;
+        }
+    }
+}
+
+
+.humburger {
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 40px;
+    width: 40px;
+    padding: 10px 5px 0 5px;
+    display: none;
+    span {
+        background-color: #4e7482;
+        width: 30px;
+        height: 1px;
+        display: block;
+        margin-bottom: 7px;
+        &:nth-child(1) {
+            width: 20px;
+            margin-left: 10px;
+        }
+    }
+}
+.drawerMenu {
+    width: 0;
+    background-color: rgba(255, 255, 255);
+    transition: 0.5s;
+    height: 0;
+    display: none;
+    z-index: -100;
+    &.open {
+        height: auto;
+        opacity: 1;
+        // display: none;
+        z-index: 100;
+    }
+}
+
+
+/**********************************　
+以下、ハンバーガーメニューの設定　
+************************************/
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 0 0 0 auto;
+        nav{
+            display: none;
+        }
+        .humburger {
+            display: block;
+            span {
+                position: absolute;
+                left: 10px;
+                width: 20px;
+                height: 2.86px;
+                border-radius: 20px;
+                background-color: #4e7482;
+                transition: ease 0.75s;
+            }
+            span:nth-of-type(1) {
+                top: 12px;
+                left: 0;
+            }
+            span:nth-of-type(2) {
+                top: 19px;
+            }
+            span:nth-of-type(3) {
+                top: 26px;
+            }
+        }
+        .drawerMenu {
+            display: block;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            .close {
+                position: absolute;
+                top: 35px;
+                right: 35px;
+                cursor: pointer;
+                span {
+                    background-color: #4e7482;
+                    width: 25px;
+                    height: 3px;
+                    display: block;
+                    margin-bottom: 10px;
+                    margin: 0 0 10px auto;
+                    &:nth-child(1) {
+                    transform: translateY(6px) rotate(130deg);
+                    }
+                    &:nth-child(2) {
+                    display: none;
+                    }
+                    &:nth-child(3) {
+                    transform: translateY(-6px) rotate(-130deg);
+                    margin-bottom: 0;
+                    }
+                }
+            }
+            ul {
+                width: 90%;
+                margin: 60px auto 10px auto;
+                padding: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                li {
+                    display: flex;
+                    margin: 15px 0;
+                    opacity: 1;
+                    font-family: "Josefin Sans", sans-serif;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}
