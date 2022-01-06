@@ -1,29 +1,27 @@
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Layout from '../components/layout';
+import test from '../styles/Test.module.scss'
 
 export default function Home() {
   return (
     
-    <div className={styles.container}>
-    <Layout>
-      <main className={styles.main}>
-        <Image src="/tehon.png" className={styles.main_img} width={300} height={300}  alt="hoshimoto profile icon" />
+    <div className={test.container}>
+      <main className={test.main}>
+        <Image src="/tehon.png" className={test.main_img} width={300} height={300}  alt="hoshimoto profile icon" />
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+        <div className={test.grid}>
+          <a href="https://nextjs.org/docs" className={test.card}>
             <h2>About &rarr;</h2>
             <p>星本泰憲について</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="https://nextjs.org/learn" className={test.card}>
             <h2>History &rarr;</h2>
             <p>経歴</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+            className={test.card}
           >
             <h2>Strengths&rarr;</h2>
             <p>できること</p>
@@ -31,7 +29,7 @@ export default function Home() {
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            className={test.card}
           >
             <h2>Other &rarr;</h2>
             <p>
@@ -40,8 +38,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-      </Layout>
-
     </div>
   )
 }

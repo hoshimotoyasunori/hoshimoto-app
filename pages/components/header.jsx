@@ -24,7 +24,7 @@ const Header =()=> {
                             <li><Link href="/about"><a className={header.item}>About</a></Link></li>
                             <li><Link href="/skills"><a className={header.item}>Skill</a></Link></li>
                             <li><Link href="/works"><a className={header.item}>Works</a></Link></li>
-                            <li><Link href="/contact"><a className={header.item}>Contact</a></Link></li>
+                            <li><Link href="/test"><a className={header.item}>Test</a></Link></li>
                         </ul>
                     </nav>
                     <div className={header.humburger} onClick={() => menuFunction()}>
@@ -44,7 +44,7 @@ const Header =()=> {
                         <li><Link href="/about"><a >About</a></Link></li>
                         <li><Link href="/skills"><a >Skill</a></Link></li>
                         <li><Link href="/works"><a >Works</a></Link></li>
-                        <li><Link href="/contact"><a >Contact</a></Link></li>
+                        <li><Link href="/test"><a >Test</a></Link></li>
                     </ul>
                 </div>
             </header>
