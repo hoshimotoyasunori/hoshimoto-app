@@ -1,4 +1,3 @@
-import Image from "next/image";
 import index from '../styles/Index.module.scss'
 
 const Home = () => {

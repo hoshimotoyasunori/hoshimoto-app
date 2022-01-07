@@ -5,15 +5,30 @@ const Home = () => {
   return (
     <div className={about.container}>
         <div className={about.title}>
-            <h1>About</h1>
+            <h1>ABOUT</h1>
+            <p></p>
         </div>
         <div className={about.box}>
-            <div className={about.item}>
-                <Image src="/tehon.png" width={400} height={400}  alt="tehon main" />
-            </div>
-            <div className={about.item}>
-                <h1>profile</h1>
-                <p>プロフィールを紹介します。</p>
+            <span>
+                <Image src="/tehon.png" width={300} height={300}  alt="tehon main" />
+            </span>
+            <div className={about.prof}>
+                <div className={about.item}>
+                    <h1>profile</h1>
+                    <p>プロフィールを紹介します。</p>
+                </div>
+                <div className={about.item}>
+                    <h1>profile</h1>
+                    <p>プロフィールを紹介します。</p>
+                </div>
+                <div className={about.item}>
+                    <h1>profile</h1>
+                    <p>プロフィールを紹介します。</p>
+                </div>
+                <div className={about.item}>
+                    <h1>profile</h1>
+                    <p>プロフィールを紹介します。</p>
+                </div>
             </div>
         </div>
     </div>
