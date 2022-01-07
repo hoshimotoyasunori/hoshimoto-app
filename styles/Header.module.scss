@@ -19,6 +19,7 @@
         height: 80px;
         z-index: 100;
         .logo{
+            margin-top: 1%;
             margin-left: 5%;
             z-index: 1000;
         }
@@ -45,7 +46,7 @@
     margin: 0 0 0 auto;
     height: 40px;
     width: 40px;
-    padding: 10px 5px 0 5px;
+    // padding: 10px 5px 0 5px;
     display: none;
     span {
         background-color: #4e7482;

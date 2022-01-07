@@ -14,7 +14,7 @@ const Header =()=> {
                     <div className={header.logo}>
                         <Link href="/">
                             <a>
-                                <Image src="/hoshimoto.png" width={200} height={50}  alt="hoshimoto header logo" className={header.logo}/>
+                                <Image src="/hoshimoto.png" width={200} height={40}  alt="hoshimoto header logo" className={header.logo}/>
                             </a>
                         </Link>
                     </div>
