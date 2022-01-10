@@ -26,24 +26,9 @@ const Home = () => {
                             G&apos;sAcademyFukuokaでエンジニアの基礎を習得し、スポーツテックで世界を変えることを目標にしています。<br/>
                         </p>
                     </div>
-                    <div className={about.item}>
-                        <h2>Skill</h2>
-                        <span></span>
-                        <div className={about.skills}>
-                            <div><Image src="/html.png" width={70} height={70}  alt="tehon main" /></div>                        
-                            <div><Image src="/css.png" width={70} height={70}  alt="tehon main" /></div>
-                            <div><Image src="/php.png" width={70} height={70}  alt="tehon main" /></div>
-                            <div><Image src="/javascript.png" width={70} height={70}  alt="tehon main" /></div>
-                            <div><Image src="/sass.png" width={70} height={70}  alt="tehon main" /></div>
-                            <div><Image src="/nextjs.png" width={70} height={70}  alt="tehon main" /></div>
-                            <div><Image src="/python.png" width={70} height={70}  alt="tehon main" /></div>
-                            <div><Image src="/flask.png" width={70} height={70}  alt="tehon main" /></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-
     );
 }
 

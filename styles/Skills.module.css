@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.container {
+  /* background-color:  rgba(175, 175, 175, 0.8); */
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100vh - 120px);
+}
+
+.container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+.container .title h1 {
+  font-size: 3em;
+  margin: 0%;
+}
+
+.container .title p {
+  border: solid;
+  width: 80%;
+  margin: 1%;
+}
+
+/**********************************　
+幅６００px以下の時
+************************************/
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: calc(100vh - 120px);
+    padding-bottom: 100px;
+  }
+}
+/*# sourceMappingURL=Skills.module.css.map */

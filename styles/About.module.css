@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .container {
   /* background-color:  rgba(175, 175, 175, 0.8); */
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,11 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   min-height: calc(100vh - 120px);
-  padding-bottom: 100px;
 }
 
 .container .title {
@@ -40,7 +36,7 @@
 
 .container .title p {
   border: solid;
-  width: 70%;
+  width: 80%;
   margin: 1%;
 }
 
@@ -48,6 +44,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
@@ -63,11 +65,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5%;
 }
 
 .container .box .prof {
-  width: 45%;
+  width: 46%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,12 +79,32 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 5%;
+  margin: 2%;
+}
+
+.container .box .prof h2 {
+  margin: 0;
+}
+
+.container .box .prof span {
+  border: solid 2px;
+  margin: 2% 0;
+  width: 100%;
+}
+
+.container .box .prof p {
   margin-top: 5%;
 }
 
-.container .box .prof h1 {
-  margin: 0;
+.container .box .prof .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5%;
 }
 
 /**********************************　
@@ -102,9 +123,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     min-height: calc(100vh - 120px);
     padding-bottom: 100px;
   }
@@ -120,6 +138,10 @@
         -ms-flex-align: center;
             align-items: center;
     width: 90%;
+    margin-top: 5%;
+  }
+  .container .box .item {
+    margin-top: 5%;
   }
   .container .box span {
     width: 100%;
